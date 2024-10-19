@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base::parent(~{::#content},~{::title},~{::script})}">
+<head>
+    <meta charset="UTF-8">
+    <title>Service Page</title>
+    <link rel="stylesheet" data-th-href="@{'/css/output.css'}">
+</head>
+<body>
+<div id="content" class="bg-gray-200 text-2xl w-1/2 p-4 flex flex-col space-y-3 mt-4">
+    <h1 class="text-2 font-bold">Welcome <span data-th-text="${name}"></span></h1>
+    <p><span data-th-text="${email}"></span></p>
+    <p><span data-th-text="${password}"></span></p>
+    <a th:href="${github}">Click here !!!</a>
+    <p>
+      <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus illo illum impedit nisi omnis suscipit. Aut cumque deserunt dignissimos eos ex impedit in molestiae nemo porro quam, quo sed, tenetur.
+      </span>
+    </p>
+</div>
+
+<script>
+    console.log("Service Page");
+</script>
+</body>
+</html>
